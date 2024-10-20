@@ -1,6 +1,7 @@
 import scrapy
 import json
 import os
+from emoji import emoji_bank
 
 class QuotesSpider(scrapy.Spider):
     name = "quotes"
@@ -49,4 +50,4 @@ class QuotesSpider(scrapy.Spider):
         with open('data/authors.json', 'w', encoding='utf-8') as f:
             json.dump(list(authors_data.values()), f, ensure_ascii=False, indent=4)
 
-        print("Все ок! Створено два файли : data/quotes.json і data/authors.json!")
+        print(f"\n{emoji_bank.get_emoji(2)} Створено два файли : data/quotes.json і data/authors.json!\n")
