@@ -1,4 +1,4 @@
-# Web Scraping -> save data to MongoDB
+# Web Scraping and -> save data to MongoDB
 
 
 ## Instruction
